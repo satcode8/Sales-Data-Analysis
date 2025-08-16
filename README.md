@@ -44,7 +44,7 @@ This analysis aimed to answer several key business questions:
 ### 1. What is the overall business performance?
 * **Finding:** The business generated approximately **$900M in total sales** and **$332M in operating profit**, with an average price per unit of **$45.22**.
 * **Visualization:**
-    ![KPI Scorecards](https://i.imgur.com/fce859d0.png)
+    ![KPI Scorecards](/images/output.png)
 
 ### 2. Are there seasonal trends in sales?
 * **Finding:** Yes, sales show a clear seasonal trend, peaking in the summer months of **July and August**.

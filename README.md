@@ -49,14 +49,14 @@ This analysis aimed to answer several key business questions:
 ### 2. Are there seasonal trends in sales?
 * **Finding:** Yes, sales show a clear seasonal trend, peaking in the summer months of **July and August**.
 * **Visualization:**
-    ![Monthly Sales Trend](https://i.imgur.com/6c4969ba.png)
+    ![Monthly Sales Trend](/images/monthly.png)
 
 ### 3. Which regions contribute the most to sales?
 * **Finding:** The **West region is the top contributor**, accounting for **30.0%** of total sales, followed by the Northeast.
 * **Visualization:**
-    ![Sales Distribution by Region](https://i.imgur.com/f33ed4a2.png)
+    ![Sales Distribution by Region](/images/regions.png)
 
 ### 4. Which products and gender segments are most popular?
 * **Finding:** **Men's Street Footwear** is the highest-selling product category, significantly outpacing other categories in both men's and women's segments.
 * **Visualization:**
-    ![Product Sales by Gender](https://i.imgur.com/96821f72.png)
+    ![Product Sales by Gender](/images/gender.png)

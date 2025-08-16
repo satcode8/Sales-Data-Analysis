@@ -30,8 +30,33 @@ The project follows a standard data analysis workflow:
 1.  **Environment Setup:** Initializes a local `SparkSession` to enable distributed data processing.
 2.  **Data Loading:** Ingests the `sales.csv` dataset into a Spark DataFrame.
 3.  **Data Cleaning & Preparation:**
+   
     * Removes commas from numeric columns (`Total Sales`, `Operating Profit`, `Units Sold`).
     * Casts columns to their correct data types (e.g., `double`, `date`).
     * Renames columns to be compatible with SQL queries (e.g., 'Total Sales' to `Total_Sales`).
-4.  **Data Analysis:** Creates a temporary SQL view named `sales_analysis` and executes a series of Spark SQL queries to aggregate data and calculate business metrics.
-5.  **Visualization:** Converts the aggregated Spark DataFrames into Pandas DataFrames to create static visualizations that clearly present the findings.
+5.  **Data Analysis:** Creates a temporary SQL view named `sales_analysis` and executes a series of Spark SQL queries to aggregate data and calculate business metrics.
+6.  **Visualization:** Converts the aggregated Spark DataFrames into Pandas DataFrames to create static visualizations that clearly present the findings.
+
+   ## 📈 Business Questions & Insights
+
+This analysis aimed to answer several key business questions:
+
+### 1. What is the overall business performance?
+* **Finding:** The business generated approximately **$900M in total sales** and **$332M in operating profit**, with an average price per unit of **$45.22**.
+* **Visualization:**
+    ![KPI Scorecards](https://i.imgur.com/fce859d0.png)
+
+### 2. Are there seasonal trends in sales?
+* **Finding:** Yes, sales show a clear seasonal trend, peaking in the summer months of **July and August**.
+* **Visualization:**
+    ![Monthly Sales Trend](https://i.imgur.com/6c4969ba.png)
+
+### 3. Which regions contribute the most to sales?
+* **Finding:** The **West region is the top contributor**, accounting for **30.0%** of total sales, followed by the Northeast.
+* **Visualization:**
+    ![Sales Distribution by Region](https://i.imgur.com/f33ed4a2.png)
+
+### 4. Which products and gender segments are most popular?
+* **Finding:** **Men's Street Footwear** is the highest-selling product category, significantly outpacing other categories in both men's and women's segments.
+* **Visualization:**
+    ![Product Sales by Gender](https://i.imgur.com/96821f72.png)
